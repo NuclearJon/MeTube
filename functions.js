@@ -1,7 +1,4 @@
 $(function(){
-   $("#clickButton").click(function(){
-       $("#helloText").text("Hello World!");
-   });
 
    var fileChooser = document.getElementById('file-chooser');
    var s3 = new AWS.S3({apiVersion: '2006-03-01'});
