@@ -5,6 +5,7 @@ $(function(){
 
    $("#upload-button").click(function(){
       var file = fileChooser.files[0];
+      console.log(file);
       $("#helloText").text("Hello World!");
       if(file){
          $("#results").text("");
