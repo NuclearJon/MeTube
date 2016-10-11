@@ -10,7 +10,7 @@ $(function(){
       if(file){
          $("#results").text("");
 
-         var params = {Key: file.name, ContextType: file.type, Body: file};
+         var params = {Bucket: metube-files,Key: file.name, ContextType: file.type, Body: file};
          s3.upload(params, function(err, data){
             $("#results").text(err ? "Error!" : "Uploaded");
             console.log(err);
